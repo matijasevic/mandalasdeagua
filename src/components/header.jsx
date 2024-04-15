@@ -19,8 +19,8 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <h1>Barrio Mandalas de Agua</h1>
       <Chartwheel />
+      <h1>Barrio Mandalas de Agua</h1>
     </header>
   );
 };
