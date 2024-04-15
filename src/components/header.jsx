@@ -1,3 +1,5 @@
+import Chartwheel from "./chartwheel";
+
 const Header = () => {
   return (
     <header>
@@ -18,6 +20,7 @@ const Header = () => {
         </ul>
       </nav>
       <h1>Barrio Mandalas de Agua</h1>
+      <Chartwheel />
     </header>
   );
 };
