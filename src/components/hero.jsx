@@ -6,6 +6,7 @@ const videoStyle = {
   objectFit: "cover",
   objectPosition: "center",
   position: "relative",
+  margin: "20px",
 };
 
 const Hero = () => {
