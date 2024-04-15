@@ -4,7 +4,10 @@ import CircleNumb from "./circleNumb";
 const Cart = () => {
   return (
     <>
-      <div onClick={() => alert("agregando ando al carrito chiquito!")}>
+      <div
+        style={{ margin: "10px", cursor: "pointer" }}
+        onClick={() => alert("agregando ando al carrito chiquito!")}
+      >
         <CircleNumb number={5} />
         <img src={cartImg} alt="carrito" />
       </div>

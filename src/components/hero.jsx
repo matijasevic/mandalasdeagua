@@ -3,7 +3,8 @@ import video from "../assets/herovideo.mp4";
 const videoStyle = {
   width: "100%",
   height: "60vh",
-  objectFit: "cover",
+
+  objectFit: "auto",
   objectPosition: "center",
   position: "relative",
   margin: "20px",
