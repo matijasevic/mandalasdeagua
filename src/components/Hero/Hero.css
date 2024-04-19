@@ -1,0 +1,8 @@
+.videoHero {
+  width: "100%";
+  height: "60vh";
+  object-fit: "auto";
+  object-position: "center";
+  position: "relative";
+  margin: "20px";
+}
