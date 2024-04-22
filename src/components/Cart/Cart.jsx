@@ -1,15 +1,14 @@
-import cartImg from "../../assets/cart.png";
-// import CircleNumb from "../CircleNumb/CircleNumb";
+import CircleNumb from "../CircleNumb/CircleNumb";
 
 const Cart = () => {
   return (
     <>
       <div
-        style={{ margin: "10px", cursor: "pointer" }}
+        className="cart"
         onClick={() => alert("agregando ando al carrito chiquito!")}
       >
-        {/* <CircleNumb number={5} /> */}
-        <img src={cartImg} alt="carrito" />
+        <CircleNumb number={5} />
+        <img src="../../assets/carrito-de-compras.png" alt="carrito" />
       </div>
     </>
   );

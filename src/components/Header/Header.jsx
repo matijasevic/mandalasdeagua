@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <div className="header">
       <Brand />
-      <h1 className="text-3xl font-bold underline">Barrio Mandalas de Agua</h1>
+      <h1 className="font-sans md:font-serif text-3xl font-bold">
+        Barrio Mandalas de Agua
+      </h1>
       <NavBar />
       <Cart />
     </div>
