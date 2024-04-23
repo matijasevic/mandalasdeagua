@@ -1,4 +1,6 @@
 import CircleNumb from "../CircleNumb/CircleNumb";
+import imgSrc from "../../assets/carrito-de-compras.png";
+import "./Cart.css";
 
 const Cart = () => {
   return (
@@ -7,8 +9,8 @@ const Cart = () => {
         className="cart"
         onClick={() => alert("agregando ando al carrito chiquito!")}
       >
-        <CircleNumb number={5} />
-        <img src="../../assets/carrito-de-compras.png" alt="carrito" />
+        <CircleNumb />
+        {/* <img src={imgSrc} alt="carrito" /> */}
       </div>
     </>
   );
