@@ -12,3 +12,7 @@
   align-items: center;
   gap: 10px;
 }
+
+.NavBar ul li a {
+  color: #e8e8e8;
+}
