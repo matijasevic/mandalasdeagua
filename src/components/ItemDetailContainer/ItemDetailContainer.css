@@ -1,0 +1,29 @@
+.itemDetailContainer {
+  background-color: #9dd79c;
+  width: 200px;
+  height: 220px;
+  border: #7bba7a 2px solid;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.houseShape {
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 40px solid#B4EBB3; /* Color del techo */
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 10px auto;
+  width: 0;
+  height: 0;
+}
+.houseChinShape {
+  background-color: #7bba7a;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 130px;
+}

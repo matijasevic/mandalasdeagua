@@ -1,0 +1,25 @@
+.itemDetail {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #b4ebb3;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 0;
+}
+
+.houseName {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: underline;
+  overflow: auto; /* Permite el desplazamiento si el contenido es demasiado largo */
+  white-space: normal; /* Permite que el texto se divida en varias líneas */
+  word-break: break-word;
+  color: #5a9d59;
+  padding-bottom: 10px;
+}
