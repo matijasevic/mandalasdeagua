@@ -1,7 +1,10 @@
+import "./Footer.css";
 const Footer = () => {
   return (
-    <div>
-      <p>Ruta 9 km 5 </p>
+    <div className="footer">
+      <p>Ruta 9 km 5 </p>🦦L&B🦦
     </div>
   );
 };
+
+export default Footer;

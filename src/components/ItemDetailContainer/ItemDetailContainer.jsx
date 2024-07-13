@@ -4,7 +4,6 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = ({ item }) => {
   const { id, name, dimensions, neighbor, corner } = item;
-  console.log({ id, name, dimensions, neighbor, corner });
   return (
     <div className="itemDetailContainer">
       <div className="houseShape"></div>

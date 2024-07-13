@@ -27,3 +27,26 @@
   margin-top: 10px;
   margin-left: 130px;
 }
+
+.itemDetailContainer:hover {
+  animation: border 3s infinite forwards ease-in;
+}
+
+@keyframes border {
+  0% {
+    transform: scale(110%);
+    border-bottom-color: #1d3939;
+  }
+  25% {
+    transform: scale(110%);
+    border-left-color: #1d3939;
+  }
+  75% {
+    transform: scale(110%);
+    border-top-color: #1d3939;
+  }
+  100% {
+    transform: scale(110%);
+    border-right-color: #1d3939;
+  }
+}

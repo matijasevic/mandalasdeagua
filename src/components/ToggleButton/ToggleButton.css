@@ -1,0 +1,28 @@
+.toogleButtonContainer {
+  width: 60px; /* Ancho del botón */
+  height: 30px; /* Altura del botón */
+  border-radius: 15px; /* Borde redondeado para dar un aspecto de switch */
+  position: relative; /* Posición relativa para el círculo interior */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar de estado */
+}
+
+.ligth {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background-color: rgb(194, 243, 227);
+  background-image: url("./images/sun.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 8px) center;
+}
+
+.dark {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background-color: rgb(21, 38, 39);
+  background-image: url("./images/moon.png");
+  background-repeat: no-repeat;
+  background-position: calc(10px) center;
+}

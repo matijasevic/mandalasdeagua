@@ -3,7 +3,6 @@ import LISTINGS from "../../MOCK";
 import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
 
 const ItemListContainer = () => {
-  console.log(LISTINGS);
   return (
     <div className="itemListContainer">
       {LISTINGS.map((item) => (

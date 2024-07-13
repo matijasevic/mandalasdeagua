@@ -2,10 +2,10 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   background-color: #b4ebb3;
-  height: 100%;
+  height: auto;
   width: 100%;
   border-radius: 5px;
   padding: 10px;
@@ -20,6 +20,37 @@
   overflow: auto; /* Permite el desplazamiento si el contenido es demasiado largo */
   white-space: normal; /* Permite que el texto se divida en varias líneas */
   word-break: break-word;
+  display: block;
+  border-radius: 10%;
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #1d3939;
+  color: white;
+  cursor: pointer;
+}
+
+.houseName:hover {
+  transform: translate(2px, 2px);
+  color: #1d3939;
+  background-color: white;
+}
+
+.houseInfo {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.houseCode {
+  display: block;
+  padding-left: 70%;
+  font-size: small;
+  font-family: "Arsenal SC", sans-serif;
+  font-style: normal;
+  color: gray;
+}
+
+label {
+  font-weight: 600;
   color: #5a9d59;
-  padding-bottom: 10px;
+  padding: 10px;
 }
