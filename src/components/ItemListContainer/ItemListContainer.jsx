@@ -1,11 +1,26 @@
 import "./ItemListContainer.css";
-import LISTINGS from "../../MOCK";
 import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
+import { useEffect, useState } from "react";
 
 const ItemListContainer = () => {
+  const [listings, setListings] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      "https://mandalas-backend.netlify.app/.netlify/functions/server/listngs"
+    )
+      .then((result) => result.json())
+      .then((data) => {
+        setListings(data);
+      })
+      .catch((err) => {
+        console.log("Error consumiendo API: " + err);
+      });
+  }, []);
+
   return (
     <div className="itemListContainer">
-      {LISTINGS.map((item) => (
+      {listings.map((item) => (
         <ItemDetailContainer key={item.id} item={item} />
       ))}
     </div>
