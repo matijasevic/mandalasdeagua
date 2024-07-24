@@ -1,0 +1,14 @@
+.map {
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/maps-and-location.png");
+  object-fit: contain;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  position: relative;
+}

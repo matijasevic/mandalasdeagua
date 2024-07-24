@@ -1,17 +1,11 @@
-import "./Header.css";
-import Cart from "../Cart/Cart";
 import NavBar from "../NavBar/NavBar";
-import Brand from "../Brand/Brand";
-import ToggleButton from "../ToggleButton/ToggleButton";
+import Container from "react-bootstrap/Container";
 
 const Header = () => {
   return (
-    <div className="header">
-      <Brand />
+    <Container fluid className="m-0 p-0">
       <NavBar />
-      <ToggleButton />
-      <Cart />
-    </div>
+    </Container>
   );
 };
 

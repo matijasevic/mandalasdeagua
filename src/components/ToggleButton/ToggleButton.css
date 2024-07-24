@@ -11,7 +11,7 @@
   width: inherit;
   height: inherit;
   border-radius: inherit;
-  background-color: rgb(194, 243, 227);
+  background-color: #e9efff;
   background-image: url("../../../public/images/sun.png");
   background-repeat: no-repeat;
   background-position: calc(100% - 8px) center;
@@ -21,7 +21,7 @@
   width: inherit;
   height: inherit;
   border-radius: inherit;
-  background-color: rgb(21, 38, 39);
+  background-color: #132d2d;
   background-image: url("../../../public/images/moon.png");
   background-repeat: no-repeat;
   background-position: calc(10px) center;

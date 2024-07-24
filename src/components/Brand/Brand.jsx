@@ -5,7 +5,7 @@ const Brand = () => {
     <div className="brand">
       <div className="brand-logo"></div>
       <h1 className="font-sans md:font-serif text-3xl font-bold">
-        Barrio Mandalas de Agua
+        Tierras Argentinas
       </h1>
     </div>
   );

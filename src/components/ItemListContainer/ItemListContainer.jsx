@@ -1,4 +1,3 @@
-import "./ItemListContainer.css";
 import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
 import { useEffect, useState } from "react";
 
@@ -7,7 +6,7 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     fetch(
-      "https://mandalas-backend.netlify.app/.netlify/functions/server/listngs"
+      "https://mandalas-backend.netlify.app/.netlify/functions/server/listings"
     )
       .then((result) => result.json())
       .then((data) => {
@@ -19,11 +18,31 @@ const ItemListContainer = () => {
   }, []);
 
   return (
-    <div className="itemListContainer">
-      {listings.map((item) => (
-        <ItemDetailContainer key={item.id} item={item} />
-      ))}
+    <div className="container text-center">
+      {listings.map((item, index) => {
+        if (index % 4 === 0) {
+          return (
+            <div key={index} className="row m-5">
+              <div className="col">
+                <ItemDetailContainer item={listings[index]} />
+              </div>
+              {listings[index + 1] && (
+                <div className="col">
+                  <ItemDetailContainer item={listings[index + 1]} />
+                </div>
+              )}
+              {listings[index + 2] && (
+                <div className="col">
+                  <ItemDetailContainer item={listings[index + 2]} />
+                </div>
+              )}
+            </div>
+          );
+        }
+        return null;
+      })}
     </div>
   );
 };
+
 export default ItemListContainer;

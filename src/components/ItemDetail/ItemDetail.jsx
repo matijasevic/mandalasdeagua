@@ -1,24 +1,34 @@
+import Card from "react-bootstrap/Card";
+import ListGroup from "react-bootstrap/ListGroup";
+import imageSrc from "../../assets/djyfly1.jpg";
+import Container from "react-bootstrap/Container";
 import "./ItemDetail.css";
-import ItemPhoto from "./ItemPhoto";
 
 const ItemDetail = ({ id, name, dimensions, neighbor, corner }) => {
   return (
-    <div className="itemDetail">
-      <h4 className="houseName">{name}</h4>
-      <p className="houseInfo">
-        <label> Dimensiones: </label>
-        {dimensions} <br />
-        <label> Esquina: </label>
-        {corner ? "si" : "no"} <br />
-        <label> Vecinos: </label>
-        {neighbor.length > 0 ? neighbor.length : "SIN LOTES VECINOS"}
-        <br />
-      </p>
-      <h6 className="houseCode">
-        cod: {id}
-        <ItemPhoto id={id} />
-      </h6>
-    </div>
+    <Card style={{ width: "20rem" }}>
+      <Card.Img variant="top" src={imageSrc} />
+      <Card.Body>
+        <Card.Title>{name}</Card.Title>
+        <Card.Text>
+          Paz y tranquilidad - Calides a la vuelta de la esquina.
+        </Card.Text>
+      </Card.Body>
+      <ListGroup className="list-group-flush">
+        <ListGroup.Item>
+          Ubicado en esquina: {corner ? "si" : "no"}
+        </ListGroup.Item>
+      </ListGroup>
+
+      <Container
+        fluid
+        bg="dark"
+        data-bs-theme="dark"
+        className="m-0 p-2 bg-success-subtle text-light d-flex flex-row justify-content-evenly"
+      >
+        {dimensions} mts²
+      </Container>
+    </Card>
   );
 };
 
