@@ -18,6 +18,11 @@ const ItemListContainer = () => {
   }, []);
 
   return (
+    //   <div className="grid text-center">
+    //   {listings.map((item, index) => (
+    //     <ItemDetailContainer item={item} key={index} />
+    //   ))}
+    // </div>
     <div className="container text-center">
       {listings.map((item, index) => {
         if (index % 4 === 0) {
@@ -34,6 +39,11 @@ const ItemListContainer = () => {
               {listings[index + 2] && (
                 <div className="col">
                   <ItemDetailContainer item={listings[index + 2]} />
+                </div>
+              )}
+              {listings[index + 3] && (
+                <div className="col">
+                  <ItemDetailContainer item={listings[index + 3]} />
                 </div>
               )}
             </div>
